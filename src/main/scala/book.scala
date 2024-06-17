@@ -4,7 +4,7 @@ object book {
   def discount(n: Int): Double = bookCoverPrice(n) * 0.4
 
   def shippingCost(n: Int): Double =
-    if (n <= 50) n * 3 else (n * 3) + (n - 50) * 75
+    if (n <= 50) n * 3 else (n * 3) + (n - 50) * 0.75
 
   def total(n: Int): Double = bookCoverPrice(n) - discount(n) + shippingCost(n)
 
